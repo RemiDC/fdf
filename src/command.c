@@ -6,7 +6,7 @@
 /*   By: nde-jesu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/15 09:05:47 by nde-jesu          #+#    #+#             */
-/*   Updated: 2019/01/16 10:39:43 by reda-con         ###   ########.fr       */
+/*   Updated: 2019/06/06 10:43:26 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	zoom(int key, t_fdf *fdf)
 	fdf = new_img(fdf);
 	if (key == KEY_PAD_ADD || key == KEY_EQUAL || key == MOUSE_SCROLL_UP)
 		++fdf->cam->zoom;
-	else if (key == KEY_PAD_SUB || key == KEY_MINUS || key ==\
+	else if (key == KEY_PAD_SUB || key == KEY_MINUS || key ==
 			MOUSE_SCROLL_DOWN)
 		--fdf->cam->zoom;
 	if (fdf->cam->zoom < 0)
